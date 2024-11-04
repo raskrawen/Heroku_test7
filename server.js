@@ -42,7 +42,7 @@ app.post('/api/chat', async (req, res) => {
             body: JSON.stringify({
                 model: 'gpt-4o-mini',
                 messages: messages,
-                temperature: process.env.CHATBOT_TEMPERATURE,
+                temperature: 0.7,
             }),
         });
 
