@@ -1,4 +1,6 @@
-virker ikke i heroku. 
+virker i heroku. 
 virker fint med hardcoded api key
+virker med api key i miljøvariabel
 
-test: simpel hello world i heroku.
+CHATBOT_ROLE i miljøvariabel
+
