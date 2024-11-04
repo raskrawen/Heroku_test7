@@ -30,7 +30,8 @@ app.post('/api/chat', async (req, res) => {
 
     // Tilføj rollen som sidste besked i messages for at sikre konteksten
     messages.push({ role: 'system', content: roleDescription });
-
+    temp = process.env.CHATBOT_TEMPERATURE;
+    
     try {
         const response = await fetch('https://api.openai.com/v1/chat/completions', {
             method: 'POST',
@@ -41,7 +42,7 @@ app.post('/api/chat', async (req, res) => {
             body: JSON.stringify({
                 model: 'gpt-4o-mini',
                 messages: messages,
-                temperature: process.env.CHATBOT_TEMPERATURE,
+                temperature: temp,
             }),
         });
 
