@@ -1,5 +1,6 @@
-// server.js beskeder lægges i et array. virker den?
+// server.js beskeder lægges i et array.
 // ekstra prompt er lagt i miljøvariabel.
+//specielt til SRP
 const express = require('express');
 const dotenv = require('dotenv');
 const fetch = require('node-fetch');
