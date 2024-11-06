@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SRPchatbot</title>
+    <title>BIOchatbot</title>
     <style>
         /* Styling af layout og chat-boksen */
         body {
@@ -90,7 +90,7 @@
             const data = await response.json();
 
             // Vis OpenAI's svar i chatvinduet
-            displayMessage(data.reply, 'SRPchatbot');
+            displayMessage(data.reply, 'BIOchatbot');
         } catch (error) {
             displayMessage("Der opstod en fejl. Prøv igen.", 'Error');
         }
